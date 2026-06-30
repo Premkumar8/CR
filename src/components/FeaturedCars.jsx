@@ -63,6 +63,18 @@ const cars = [
 
 const FeaturedCars = () => {
   const { t } = useTranslation();
+  const [carList, setCarList] = React.useState(cars);
+
+  React.useEffect(() => {
+    fetch('/api/cars')
+      .then(res => res.json())
+      .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
+          setCarList(data);
+        }
+      })
+      .catch(err => console.error('Failed to fetch from DB, using mock data', err));
+  }, []);
 
   return (
     <section className="featured-section">
@@ -90,7 +102,7 @@ const FeaturedCars = () => {
           }}
           className="featured-swiper-container"
         >
-          {cars.map((car) => (
+          {carList.map((car) => (
             <SwiperSlide key={car.id}>
               <Link to={`/car/${car.id}`} className="featured-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="featured-image-container">

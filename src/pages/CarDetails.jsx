@@ -49,8 +49,46 @@ const CarDetails = () => {
   const [activeImg, setActiveImg] = useState(0);
   const [activeTab, setActiveTab] = useState('basicData');
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+  const [car, setCar] = useState(mockCarData);
 
-  const car = mockCarData; // We'd fetch by ID here normally
+  React.useEffect(() => {
+    if (id) {
+      fetch(`/api/car?id=${id}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.id) {
+            // Map DB flat structure to our nested mock structure
+            const mappedCar = {
+              id: data.id,
+              title: data.name,
+              price: data.price,
+              images: [data.image, ...mockCarData.images.slice(1)],
+              specs: {
+                condition: data.condition,
+                fuel: data.fuel,
+                power: data.power,
+                transmission: data.transmission
+              },
+              seller: {
+                name: data.seller_name,
+                location: data.seller_location,
+                responseRate: data.seller_response,
+                memberSince: data.seller_member_since
+              },
+              vehicleInfo: {
+                marca: data.info_marca,
+                modello: data.info_modello,
+                versione: data.info_versione,
+                carburante: data.info_carburante,
+                chilometri: data.info_chilometri
+              }
+            };
+            setCar(mappedCar);
+          }
+        })
+        .catch(err => console.error('Failed to fetch from DB, using mock data', err));
+    }
+  }, [id]);
 
   return (
     <div className="cd-page">
