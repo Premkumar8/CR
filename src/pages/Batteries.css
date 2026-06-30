@@ -1,0 +1,127 @@
+.batt-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.batt-hero {
+  background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1600') center/cover;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.batt-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.batt-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.batt-container {
+  max-width: 1000px;
+  margin: -3rem auto 4rem;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.batt-finder-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.batt-finder-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.batt-finder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .batt-finder-grid {
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: end;
+  }
+}
+
+.batt-select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.batt-select:focus {
+  border-color: #f25c05;
+}
+
+.batt-submit-btn {
+  background: #f25c05;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 52px;
+  transition: background 0.2s;
+}
+
+.batt-submit-btn:hover {
+  background: #d95304;
+}
+
+.batt-brands-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.batt-brands-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.batt-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .batt-brands-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.batt-brand-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #374151;
+}

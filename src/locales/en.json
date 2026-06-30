@@ -1,0 +1,155 @@
+{
+  "navbar": {
+    "sellCar": "Sell a Car",
+    "buyCar": "Buy a Car",
+    "spareParts": "Spare Parts",
+    "batteries": "Batteries",
+    "saved": "Saved",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Find your perfect drive.",
+    "subtitle": "Search thousands of new and used cars from top Indian brands.",
+    "slides": {
+      "cars": {
+        "title": "Find your perfect drive.",
+        "subtitle": "Search thousands of new and used cars from top Indian brands."
+      },
+      "parts": {
+        "title": "Genuine Spare Parts",
+        "subtitle": "Find the perfect fit for your vehicle with our OEM guaranteed parts."
+      },
+      "batteries": {
+        "title": "High Performance Batteries",
+        "subtitle": "Never get stranded. Shop top battery brands with up to 60 months warranty."
+      }
+    },
+    "search": {
+      "brand": "Make / Brand",
+      "model": "Model",
+      "price": "Max Price",
+      "body": "Body Type",
+      "button": "Search Cars",
+      "any": "Any"
+    }
+  },
+  "featured": {
+    "title": "Featured Cars",
+    "viewDetails": "View Details"
+  },
+  "categories": {
+    "title": "Browse by Category",
+    "suv": "SUV",
+    "sedan": "Sedan",
+    "hatchback": "Hatchback",
+    "muv": "MUV"
+  },
+  "footer": {
+    "indiauto": "INDIAUTO",
+    "about": "About Us",
+    "help": "Need help?",
+    "identification": "Identification Data",
+    "conditions": "General Conditions",
+    "privacy": "Privacy",
+    "privacySettings": "Privacy Settings",
+    "security": "Security",
+    "explore": "EXPLORE",
+    "adsByRegion": "Ads by region",
+    "makesModels": "Makes and Models",
+    "allUsedCars": "All used cars",
+    "vehicleTypes": "Vehicle types",
+    "dealers": "Dealers in India",
+    "magazine": "Magazine Articles",
+    "valuation": "Car Valuation",
+    "businessArea": "BUSINESS AREA",
+    "dealerRegistration": "Dealer Registration",
+    "businessPlatform": "Business Platform",
+    "multimanagement": "Multi-management Motors",
+    "partOf": "INDIAUTO IS PART OF",
+    "followUs": "FOLLOW US",
+    "copyright": "Copyright © 2026 IndiAuto. All rights reserved."
+  },
+  "carDetails": {
+    "backToSearch": "Back to search",
+    "next": "Next",
+    "soldBy": "SOLD BY",
+    "showNumber": "SHOW NUMBER",
+    "contact": "CONTACT",
+    "description": "DESCRIPTION",
+    "readAll": "READ ALL",
+    "showLess": "SHOW LESS",
+    "vehicleInfo": "VEHICLE INFORMATION",
+    "tabs": {
+      "basicData": "BASIC DATA",
+      "consumption": "CONSUMPTION",
+      "condition": "CONDITION",
+      "accessories": "ACCESSORIES"
+    },
+    "specs": {
+      "type": "Type",
+      "brand": "Brand",
+      "model": "Model",
+      "version": "Version",
+      "fuel": "Fuel",
+      "kilometers": "Kilometers"
+    },
+    "seeAll": "SEE ALL",
+    "seller": "SELLER",
+    "contactSeller": "CONTACT THE SELLER",
+    "checkboxes": {
+      "price": "What is the on-road price?",
+      "availability": "Is the car still available?",
+      "tradeIn": "Do you accept trade-ins?",
+      "financing": "Do you offer financing?",
+      "colors": "Is it available in other colors?"
+    },
+    "defaultMsg": "I would like to be contacted to get more information about this ad.",
+    "form": {
+      "nameLabel": "Your name:",
+      "namePlaceholder": "e.g. John Doe",
+      "emailLabel": "Your email:",
+      "emailPlaceholder": "e.g. john.doe@email.com",
+      "phoneLabel": "Your phone number:",
+      "phonePlaceholder": "e.g. 9876543210",
+      "sendMessage": "SEND MESSAGE"
+    },
+    "privacy": "By clicking the button I give my consent to use my contacts as indicated in our privacy policy, for example to send recommendations for similar vehicles.",
+    "guideTitle": "Audi Q5: price, dimensions and technical sheet",
+    "guideText": "The third generation of the Audi Q5 is updated from all points of view. The range is completely hybrid, including Diesel.",
+    "readReview": "READ THE REVIEW",
+    "downloadGuide": "DOWNLOAD GUIDE"
+  },
+  "buyCarPage": {
+    "title": "Buy Your Dream Car",
+    "subtitle": "Explore our vast inventory of certified pre-owned and new cars.",
+    "filters": "Filters",
+    "results": "Results found"
+  },
+  "sellCarPage": {
+    "title": "Sell Your Car at the Best Price",
+    "subtitle": "Get an instant valuation and sell your car within 24 hours.",
+    "formTitle": "Enter Car Details",
+    "make": "Make",
+    "model": "Model",
+    "year": "Year",
+    "submit": "Get Valuation"
+  },
+  "sparePartsPage": {
+    "title": "Genuine Spare Parts",
+    "subtitle": "Find the perfect fit for your vehicle with our OEM guaranteed parts.",
+    "categories": "Top Categories",
+    "engines": "Engines & Transmissions",
+    "brakes": "Brake Systems",
+    "suspension": "Suspension & Steering",
+    "searchPlaceholder": "Search by part number or name..."
+  },
+  "batteriesPage": {
+    "title": "High Performance Batteries",
+    "subtitle": "Never get stranded. Shop top battery brands with up to 60 months warranty.",
+    "finderTitle": "Battery Finder",
+    "selectMake": "Select Make",
+    "selectModel": "Select Model",
+    "findBattery": "Find Battery",
+    "topBrands": "Top Brands"
+  }
+}

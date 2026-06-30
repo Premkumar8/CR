@@ -1,0 +1,211 @@
+.featured-section {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.featured-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.featured-subtitle {
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+.featured-view-all {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f25c05;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .featured-view-all {
+    display: flex;
+  }
+}
+
+.featured-view-all:hover {
+  color: #d95304;
+}
+
+.featured-swiper-container {
+  position: relative;
+  /* Extra padding at bottom for pagination dots */
+  padding-bottom: 4rem !important;
+}
+
+/* Ensure all slides are exactly the same height */
+.featured-swiper-container .swiper-slide {
+  height: auto !important;
+}
+
+.featured-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  height: 100%; /* Stretch to fill slide */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f3f4f6;
+  cursor: pointer;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.featured-image-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f3f4f6; /* Fallback color */
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-image {
+  transform: scale(1.05);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: white;
+  color: #f25c05;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+.featured-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Take up remaining space in card */
+}
+
+.featured-brand {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.featured-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1.5rem; /* Ensure space before footer */
+  line-height: 1.2;
+}
+
+.featured-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Push to the very bottom */
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.featured-price {
+  color: #f25c05;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.featured-details-btn {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.featured-details-btn:hover {
+  color: #f25c05;
+}
+
+/* Custom Swiper Navigation */
+.featured-swiper-container .swiper-button-next,
+.featured-swiper-container .swiper-button-prev {
+  background-color: white !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+  color: #f25c05 !important;
+  opacity: 1 !important;
+  top: 110px !important; /* Center on image (220/2) */
+  margin-top: -24px !important; /* Adjust for button height (48/2) */
+}
+
+.featured-swiper-container .swiper-button-next::after,
+.featured-swiper-container .swiper-button-prev::after {
+  font-size: 1.25rem !important;
+  font-weight: 900 !important;
+}
+
+.featured-swiper-container .swiper-button-next:hover,
+.featured-swiper-container .swiper-button-prev:hover {
+  background-color: #fffaf5 !important;
+  transform: scale(1.05);
+}
+
+.featured-swiper-container .swiper-button-disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Custom Swiper Pagination */
+.featured-swiper-container .swiper-pagination {
+  bottom: 0px !important; /* Move dots down */
+}
+
+.featured-swiper-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #d1d5db;
+  opacity: 1;
+}
+
+.featured-swiper-container .swiper-pagination-bullet-active {
+  background-color: #f25c05;
+  width: 24px;
+  border-radius: 5px;
+}

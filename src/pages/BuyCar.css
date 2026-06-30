@@ -1,0 +1,158 @@
+.buy-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.buy-hero {
+  background: linear-gradient(to right, #f25c05, #ff8a00);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.buy-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.buy-subtitle {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.buy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .buy-container {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+.buy-sidebar {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.buy-filter-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.buy-filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.buy-filter-label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.buy-filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.buy-filter-select:focus {
+  border-color: #f25c05;
+}
+
+.buy-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.buy-results-count {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.buy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .buy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .buy-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.buy-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.buy-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.buy-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.buy-card-brand {
+  color: #f25c05;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.buy-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.buy-card-price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-top: auto;
+}
