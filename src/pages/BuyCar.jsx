@@ -46,7 +46,7 @@ const MOCK_CARS = [
     brand: 'Hyundai',
     name: 'Tucson Signature',
     price: '₹ 32,40,000',
-    image: 'https://images.unsplash.com/photo-1662991097205-18dd46b8be29?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
