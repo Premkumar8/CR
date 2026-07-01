@@ -1,4 +1,12 @@
 {
+  "home": {
+    "brandsTitle": "Top Brands We Service",
+    "testimonialsTitle": "Happy Customers Across South India",
+    "testimonialsSubtitle": "See what our community has to say about our premium services.",
+    "testimonial1": "Got the best resale value for my Tata Nexon. Fast, transparent, and highly recommended!",
+    "testimonial2": "The team in Coimbatore is excellent. Car wash and repair was done in record time.",
+    "testimonial3": "Premium service and very friendly staff. Finding authentic spare parts in Bangalore was never this easy."
+  },
   "navbar": {
     "sellCar": "Sell Car",
     "buyCar": "Buy a Car",

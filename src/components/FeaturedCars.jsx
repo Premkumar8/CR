@@ -1,12 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './FeaturedCars.css';
 
@@ -90,10 +89,10 @@ const FeaturedCars = () => {
       
       <div className="featured-swiper-container">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true, dynamicBullets: true }}
           breakpoints={{
             640: { slidesPerView: 2 },
