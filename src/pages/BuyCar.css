@@ -153,6 +153,87 @@
 .buy-card-price {
   font-size: 1.25rem;
   font-weight: 800;
-  color: #1a1a2e;
-  margin-top: auto;
+  color: #f25c05;
+}
+
+/* Compare Feature Styles */
+.buy-card.selected-for-compare {
+  border: 2px solid #f25c05;
+  box-shadow: 0 10px 15px -3px rgba(242, 92, 5, 0.2);
+}
+
+.buy-card-compare-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid #f1f5f9;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.buy-card-compare-action:hover {
+  background: #f1f5f9;
+}
+
+.compare-floating-bar {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0f172a;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translate(-50%, 100%); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.compare-floating-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.compare-floating-text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.compare-floating-btn {
+  background: #f25c05;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.compare-floating-btn:hover {
+  background: #d95304;
+}
+
+.compare-floating-clear {
+  background: transparent;
+  color: #94a3b8;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.compare-floating-clear:hover {
+  color: white;
 }

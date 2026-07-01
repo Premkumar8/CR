@@ -1,0 +1,136 @@
+.compare-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.compare-modal {
+  background: white;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.compare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.compare-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.compare-close-btn {
+  background: #f1f5f9;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.compare-close-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.compare-content {
+  padding: 2rem;
+}
+
+.compare-grid {
+  display: grid;
+  gap: 1px;
+  background: #e2e8f0;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.compare-cell {
+  background: white;
+  padding: 1rem;
+}
+
+.compare-feature-label {
+  font-weight: 700;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.compare-feature-label.empty {
+  background: white;
+}
+
+.compare-car-header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.compare-car-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.compare-car-brand {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.compare-car-name {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.compare-car-price {
+  color: #f25c05;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.compare-value {
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

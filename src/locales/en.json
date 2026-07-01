@@ -14,7 +14,30 @@
     "batteries": "Batteries",
     "repairWash": "Repair & Wash",
     "saved": "Saved",
-    "login": "Login"
+    "login": "Login",
+    "cashOption": "Cash Payment",
+    "emiOption": "EMI starting at"
+  },
+  "emi": {
+    "title": "EMI Calculator",
+    "monthlyPayment": "Monthly EMI",
+    "totalInterest": "Total Interest:",
+    "loanAmount": "Loan Amount",
+    "interestRate": "Interest Rate",
+    "tenure": "Loan Tenure",
+    "months": "Months"
+  },
+  "compare": {
+    "title": "Compare Cars",
+    "engine": "Engine",
+    "mileage": "Mileage",
+    "transmission": "Transmission",
+    "seating": "Seating",
+    "selectBtn": "Compare",
+    "carsSelected": "cars selected",
+    "compareNow": "Compare Now",
+    "clear": "Clear",
+    "maxLimit": "You can only compare up to 3 cars at a time."
   },
   "hero": {
     "title": "Find your perfect drive.",
