@@ -1,5 +1,5 @@
 .featured-section {
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@
 .featured-swiper-container {
   position: relative;
   /* Extra padding at bottom for pagination dots */
-  padding-bottom: 4rem !important;
+  padding-bottom: 3rem !important;
 }
 
 /* Ensure all slides are exactly the same height */
