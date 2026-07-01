@@ -23,6 +23,11 @@ const slides = [
     image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=2070',
     titleKey: 'hero.slides.batteries.title',
     subtitleKey: 'hero.slides.batteries.subtitle'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2070',
+    titleKey: 'hero.slides.repair.title',
+    subtitleKey: 'hero.slides.repair.subtitle'
   }
 ];
 
@@ -51,7 +56,7 @@ const HeroSection = () => {
                   style={{ 
                     width: '100%',
                     height: '100%',
-                    backgroundImage: `linear-gradient(to right, rgba(242, 92, 5, 0.9) 0%, rgba(242, 92, 5, 0.4) 50%, transparent 100%), url("${slide.image}")`,
+                    backgroundImage: `linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 45%, rgba(242, 92, 5, 0.1) 100%), url("${slide.image}")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
