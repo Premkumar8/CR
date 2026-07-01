@@ -8,6 +8,7 @@ import SpareParts from './pages/SpareParts';
 import SparePartDetails from './pages/SparePartDetails';
 import Batteries from './pages/Batteries';
 import BatteryDetails from './pages/BatteryDetails';
+import RepairAndWash from './pages/RepairAndWash';
 import './index.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/parts/:id" element={<SparePartDetails />} />
         <Route path="/batteries" element={<Batteries />} />
         <Route path="/batteries/:id" element={<BatteryDetails />} />
+        <Route path="/repair-wash" element={<RepairAndWash />} />
         <Route path="/car/:id" element={<CarDetails />} />
       </Routes>
     </Router>

@@ -1,9 +1,10 @@
 {
   "navbar": {
-    "sellCar": "Sell a Car",
+    "sellCar": "Sell Car",
     "buyCar": "Buy a Car",
     "spareParts": "Spare Parts",
     "batteries": "Batteries",
+    "repairWash": "Repair & Wash",
     "saved": "Saved",
     "login": "Login"
   },
@@ -168,5 +169,33 @@
     "cca": "CCA",
     "voltage": "Voltage",
     "compatibility": "Check Compatibility"
+  },
+  "repairWash": {
+    "title": "Premium Car Repair & Wash",
+    "subtitle": "Book our professional services today. Exclusive ₹100 Car Wash & Checkup offer running now!",
+    "bookTitle": "Book an Appointment",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "vehicle": "Vehicle Make & Model",
+    "serviceType": "Service Type",
+    "carWash": "Car Wash (Offer ₹100)",
+    "generalRepair": "General Repair",
+    "fullService": "Full Service",
+    "date": "Preferred Date",
+    "bookNow": "Book Now",
+    "whatsappText": "Chat with us on WhatsApp",
+    "servicesTitle": "Our Premium Services",
+    "foamWash": "Foam Wash & Wax",
+    "foamWashDesc": "Deep cleaning using eco-friendly snow foam and premium wax for a lasting shine.",
+    "interiorDetail": "Interior Detailing",
+    "interiorDetailDesc": "Complete vacuuming, dashboard polishing, and odor removal.",
+    "engineDiag": "Engine Diagnostics",
+    "engineDiagDesc": "Computerized scanning to identify and fix engine issues quickly.",
+    "generalService": "General Servicing",
+    "generalServiceDesc": "Oil changes, brake inspections, and routine maintenance.",
+    "whyChooseUs": "Why Choose Us",
+    "certifiedMech": "Certified Expert Mechanics",
+    "genuineParts": "100% Genuine Spare Parts",
+    "specialOffer": "Special ₹100 Wash Offer - Limited Time!"
   }
 }

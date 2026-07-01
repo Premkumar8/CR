@@ -30,19 +30,19 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .navbar-right {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 
 .navbar-links {
   display: none;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 @media (min-width: 900px) {
@@ -58,6 +58,7 @@
   font-size: 0.95rem;
   transition: color 0.2s;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .navbar-link:hover {

@@ -36,13 +36,10 @@ const Navbar = () => {
             <Link to="/sell" className="navbar-link">{t('navbar.sellCar', 'Sell Car')}</Link>
             <Link to="/parts" className="navbar-link">{t('navbar.spareParts', 'Spare Parts')}</Link>
             <Link to="/batteries" className="navbar-link">{t('navbar.batteries', 'Batteries')}</Link>
+            <Link to="/repair-wash" className="navbar-link">{t('navbar.repairWash', 'Repair & Wash')}</Link>
           </div>
           
           <div className="navbar-actions">
-            <button className="navbar-action-btn desktop-only">
-              <Heart size={20} />
-              <span className="navbar-action-text">{t('navbar.saved', 'Saved')}</span>
-            </button>
             <button className="navbar-action-btn desktop-only">
               <User size={20} />
               <span className="navbar-action-text">{t('navbar.login', 'Login')}</span>
@@ -69,13 +66,10 @@ const Navbar = () => {
             <Link to="/sell" className="mobile-nav-link" onClick={closeMobileMenu}>{t('navbar.sellCar', 'Sell Car')}</Link>
             <Link to="/parts" className="mobile-nav-link" onClick={closeMobileMenu}>{t('navbar.spareParts', 'Spare Parts')}</Link>
             <Link to="/batteries" className="mobile-nav-link" onClick={closeMobileMenu}>{t('navbar.batteries', 'Batteries')}</Link>
+            <Link to="/repair-wash" className="mobile-nav-link" onClick={closeMobileMenu}>{t('navbar.repairWash', 'Repair & Wash')}</Link>
             
             <hr className="mobile-divider" />
             
-            <button className="mobile-action-btn">
-              <Heart size={20} />
-              <span>{t('navbar.saved', 'Saved')}</span>
-            </button>
             <button className="mobile-action-btn">
               <User size={20} />
               <span>{t('navbar.login', 'Login')}</span>
