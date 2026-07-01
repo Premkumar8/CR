@@ -141,7 +141,19 @@
     "engines": "Engines & Transmissions",
     "brakes": "Brake Systems",
     "suspension": "Suspension & Steering",
-    "searchPlaceholder": "Search by part number or name..."
+    "searchPlaceholder": "Search by part number or name...",
+    "indianBrandsTitle": "Popular Indian Car Parts",
+    "indianBrandsDesc": "Find authentic spare parts for top Indian manufacturers.",
+    "maruti": "Maruti Suzuki Genuine Parts",
+    "tata": "Tata Motors Original Spares",
+    "mahindra": "Mahindra Authentic Parts",
+    "allCategories": "All Categories",
+    "filtersCat": "Filters & Fluids",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "price": "Price",
+    "viewDetails": "Add to Cart",
+    "noResults": "No parts found matching your criteria."
   },
   "batteriesPage": {
     "title": "High Performance Batteries",
@@ -150,6 +162,11 @@
     "selectMake": "Select Make",
     "selectModel": "Select Model",
     "findBattery": "Find Battery",
-    "topBrands": "Top Brands"
+    "topBrands": "Top Brands",
+    "capacity": "Capacity",
+    "warranty": "Warranty",
+    "cca": "CCA",
+    "voltage": "Voltage",
+    "compatibility": "Check Compatibility"
   }
 }

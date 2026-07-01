@@ -31,24 +31,31 @@
   border-radius: 9999px;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  padding: 0.25rem;
 }
 
 .parts-search-input {
   flex: 1;
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.5rem;
   border: none;
   font-size: 1rem;
   outline: none;
+  border-radius: 9999px;
 }
 
 .parts-search-btn {
   background: #f25c05;
   color: white;
   border: none;
-  padding: 0 2rem;
-  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-left: 0.5rem;
 }
 
 .parts-search-btn:hover {
@@ -61,61 +68,249 @@
   padding: 4rem 1.5rem;
 }
 
-.parts-section-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #1a1a2e;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.parts-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+/* New Layout */
+.parts-layout {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-@media (min-width: 640px) {
-  .parts-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 900px) {
+  .parts-layout {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
-@media (min-width: 1024px) {
-  .parts-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.parts-card {
+/* Sidebar */
+.parts-sidebar {
+  flex: 0 0 250px;
   background: white;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-  cursor: pointer;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 2rem;
 }
 
-.parts-card:hover {
-  transform: translateY(-5px);
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  background: #f1f5f9;
+  color: #1a1a2e;
+}
+
+.category-btn.active {
+  background: #fff0e6;
+  color: #f25c05;
+  font-weight: 600;
+}
+
+.brand-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.brand-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.brand-badge.maruti { background: #fee2e2; color: #ef4444; }
+.brand-badge.tata { background: #e0f2fe; color: #0ea5e9; }
+.brand-badge.mahindra { background: #ffedd5; color: #f97316; }
+
+/* Main Content */
+.parts-main {
+  flex: 1;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.catalog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card:hover {
+  transform: translateY(-4px);
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.parts-card-icon {
-  width: 80px;
-  height: 80px;
-  background: #fffaf5;
-  color: #f25c05;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
+.catalog-image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #f1f5f9;
 }
 
-.parts-card-title {
-  font-size: 1.25rem;
+.catalog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stock-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+
+.in-stock {
+  background: rgba(220, 252, 231, 0.9);
+  color: #166534;
+}
+
+.out-of-stock {
+  background: rgba(254, 226, 226, 0.9);
+  color: #991b1b;
+}
+
+.catalog-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.catalog-brand {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.catalog-title {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.catalog-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.price-amount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f25c05;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+  background: #d95304;
+}
+
+.add-to-cart-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  color: #64748b;
+}
+
+.no-results h3 {
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.reset-btn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #475569;
+}
+
+.reset-btn:hover {
+  background: #f1f5f9;
 }
