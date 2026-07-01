@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { MessageCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './BuyCar.css';
@@ -122,6 +123,11 @@ const BuyCar = () => {
           </div>
         </div>
       </div>
+
+      <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="global-whatsapp-cta">
+        <MessageCircle size={28} />
+        <span className="global-whatsapp-text">{t('repairWash.whatsappText', 'Chat with us on WhatsApp')}</span>
+      </a>
 
       <Footer />
     </div>

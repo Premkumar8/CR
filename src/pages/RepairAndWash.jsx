@@ -210,10 +210,10 @@ const RepairAndWash = () => {
         href="https://wa.me/919876543210" 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="rw-whatsapp-cta"
+        className="global-whatsapp-cta"
       >
         <MessageCircle size={28} />
-        <span className="rw-whatsapp-text">{t('repairWash.whatsappText', 'Chat with us on WhatsApp')}</span>
+        <span className="global-whatsapp-text">{t('repairWash.whatsappText', 'Chat with us on WhatsApp')}</span>
       </a>
 
       <Footer />

@@ -127,13 +127,21 @@
     "results": "Results found"
   },
   "sellCarPage": {
-    "title": "Sell Your Car at the Best Price",
-    "subtitle": "Get an instant valuation and sell your car within 24 hours.",
-    "formTitle": "Enter Car Details",
+    "title": "Sell Your Car",
+    "subtitle": "Get the best price for your used car in minutes",
+    "formTitle": "Car Details",
     "make": "Make",
     "model": "Model",
     "year": "Year",
-    "submit": "Get Valuation"
+    "submit": "Get Valuation",
+    "aiReportTitle": "AI Valuation Report",
+    "estValue": "Estimated Market Value",
+    "depreciationGraph": "Depreciation Forecast",
+    "keyFactors": "Key Market Factors",
+    "factor1": "High Demand for Make/Model",
+    "factor2": "Average Depreciation Rate",
+    "factor3": "Excellent Market Conditions",
+    "recalculate": "Recalculate"
   },
   "sparePartsPage": {
     "title": "Genuine Spare Parts",
